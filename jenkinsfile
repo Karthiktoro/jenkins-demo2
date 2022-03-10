@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("checkout"){
             steps{
-               bat "git https://github.com/Karthiktoro/jenkins-demo2.git"
+               git "https://github.com/Karthiktoro/jenkins-demo2.git"
             }
         }
         stage("compile"){
